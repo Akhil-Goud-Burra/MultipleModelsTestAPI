@@ -9,6 +9,8 @@ namespace Employee.Models
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int EmployeeId { get; set; }
 
+        [Required]
+        [MaxLength(100)]
         public string EmployeeName { get; set; }
 
         // Navigation property to JobDescriptions
