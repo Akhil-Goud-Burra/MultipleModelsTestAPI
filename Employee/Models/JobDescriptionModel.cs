@@ -17,7 +17,7 @@ namespace Employee.Models
         public int EmployeeId { get; set; }
 
         // Navigation property to Employee
-        public EmployeeModel? Employee { get; set; }
+        public EmployeeModel Employee { get; set; }
 
         // Navigation property to JobTitles
         public ICollection<JobTitleModel> JobTitles { get; set; }

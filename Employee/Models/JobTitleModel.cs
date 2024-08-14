@@ -10,9 +10,11 @@ namespace Employee.Models
         public int JobTitleId { get; set; }
 
         [Required]
+        [MaxLength(30)]
         public string JobTitle { get; set; }
 
         [Required]
+        [MaxLength(30)]
         public string Position { get; set; }
 
 
@@ -20,7 +22,7 @@ namespace Employee.Models
         public int JobDescriptionId { get; set; }
 
         // Navigation property to JobDescription
-        public JobDescriptionModel? JobDescription { get; set; }
+        public JobDescriptionModel JobDescription { get; set; }
 
         public JobTitleModel()
         {
